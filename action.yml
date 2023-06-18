@@ -7,17 +7,19 @@ branding:
 inputs:
   tag_version_prefix:
     description: The prefix of the version used in the tag. (`v` by default).
-    required: true
+    required: false
     default: v
   package_name:
     description: The name of the AUR package to update.
     required: true
   commit_username:
     description: The username to use when creating the new commit.
-    required: true
+    required: false
+    default: github-action[bot]
   commit_email:
     description: The email to use when creating the new commit.
-    required: true
+    required: false
+    default: 41898282+github-actions[bot]@users.noreply.github.com
   ssh_private_key:
     description: The SSH private key with access to the specified AUR package.
     required: true

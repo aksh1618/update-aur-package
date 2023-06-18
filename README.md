@@ -6,10 +6,10 @@ A simple yet powerful action to automatically update your AUR package to the ver
 
 | Input                | Required | Description                                                   |
 | -------------------- | -------- | ------------------------------------------------------------- |
-| `tag_version_prefix` | `true`   | The prefix of the version used in the tag. (`v` by default).  |
+| `tag_version_prefix` | `false`   | The prefix of the version used in the tag. (`v` by default).  |
 | `package_name`       | `true`   | The name of the AUR package to update.                        |
-| `commit_username`    | `true`   | The username to use when creating the new commit.             |
-| `commit_email`       | `true`   | The email to use when creating the new commit.                |
+| `commit_username`    | `false`   | The username to use when creating the new commit.             |
+| `commit_email`       | `false`   | The email to use when creating the new commit.                |
 | `ssh_private_key`    | `true`   | The SSH private key with access to the specified AUR package. |
 
 ## Example
